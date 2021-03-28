@@ -8,6 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var userName = String()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -40,7 +40,7 @@
         <!--View Controller-->
         <scene sceneID="i58-QL-Ugl">
             <objects>
-                <viewController id="fpe-Wy-tgX" customClass="ViewController" customModule="CookingRecipe2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fpe-Wy-tgX" customClass="ViewController" customModule="CookingRecipe2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6mq-PG-eCl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

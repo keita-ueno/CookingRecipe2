@@ -52,6 +52,10 @@ class LoginViewController: UIViewController {
                 
                 activityView.stopAnimating()
                 
+                let viewVC = self.storyboard?.instantiateViewController(identifier: "viewVC") as! ViewController
+                viewVC.userName = (result?.user.displayName)!
+                self.navigationController?.pushViewController(viewVC, animated: true)
+                
             }
             
         })
