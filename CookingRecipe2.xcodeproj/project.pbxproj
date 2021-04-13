@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B9239261F9E9C00E09BFD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9238261F9E9B00E09BFD /* ImageViewController.swift */; };
+		0470EA7826224FBD00615CC1 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470EA7726224FBD00615CC1 /* UIColor-Extension.swift */; };
 		04969A30260FDE6E00E7B9C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04969A2F260FDE6E00E7B9C3 /* LoginViewController.swift */; };
-		04969A33260FE02E00E7B9C3 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = 04969A32260FE02E00E7B9C3 /* GoogleService-Info (2).plist */; };
+		04969A33260FE02E00E7B9C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04969A32260FE02E00E7B9C3 /* GoogleService-Info.plist */; };
+		04B91EB0261BB06500EDD36A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91EAF261BB06500EDD36A /* ImageModel.swift */; };
 		04DDF6A7260FD8DB008F965F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF6A6260FD8DB008F965F /* AppDelegate.swift */; };
 		04DDF6A9260FD8DB008F965F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF6A8260FD8DB008F965F /* SceneDelegate.swift */; };
 		04DDF6AB260FD8DB008F965F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF6AA260FD8DB008F965F /* ViewController.swift */; };
@@ -19,8 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042B9238261F9E9B00E09BFD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		0470EA7726224FBD00615CC1 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		04969A2F260FDE6E00E7B9C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		04969A32260FE02E00E7B9C3 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		04969A32260FE02E00E7B9C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04B91EAF261BB06500EDD36A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		04DDF6A3260FD8DB008F965F /* CookingRecipe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingRecipe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DDF6A6260FD8DB008F965F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DDF6A8260FD8DB008F965F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +57,17 @@
 			children = (
 				04DDF6AA260FD8DB008F965F /* ViewController.swift */,
 				04969A2F260FDE6E00E7B9C3 /* LoginViewController.swift */,
+				042B9238261F9E9B00E09BFD /* ImageViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B91EAE261BB04C00EDD36A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B91EAF261BB06500EDD36A /* ImageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		04DDF69A260FD8DB008F965F = {
@@ -76,6 +91,8 @@
 		04DDF6A5260FD8DB008F965F /* CookingRecipe2 */ = {
 			isa = PBXGroup;
 			children = (
+				0470EA7726224FBD00615CC1 /* UIColor-Extension.swift */,
+				04B91EAE261BB04C00EDD36A /* Model */,
 				04DDF6A6260FD8DB008F965F /* AppDelegate.swift */,
 				04DDF6A8260FD8DB008F965F /* SceneDelegate.swift */,
 				04969A2D260FDDFF00E7B9C3 /* Controller */,
@@ -83,7 +100,7 @@
 				04DDF6AF260FD8DF008F965F /* Assets.xcassets */,
 				04DDF6B1260FD8DF008F965F /* LaunchScreen.storyboard */,
 				04DDF6B4260FD8DF008F965F /* Info.plist */,
-				04969A32260FE02E00E7B9C3 /* GoogleService-Info (2).plist */,
+				04969A32260FE02E00E7B9C3 /* GoogleService-Info.plist */,
 			);
 			path = CookingRecipe2;
 			sourceTree = "<group>";
@@ -164,7 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04969A33260FE02E00E7B9C3 /* GoogleService-Info (2).plist in Resources */,
+				04969A33260FE02E00E7B9C3 /* GoogleService-Info.plist in Resources */,
 				04DDF6B3260FD8DF008F965F /* LaunchScreen.storyboard in Resources */,
 				04DDF6B0260FD8DF008F965F /* Assets.xcassets in Resources */,
 				04DDF6AE260FD8DB008F965F /* Main.storyboard in Resources */,
@@ -221,8 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04969A30260FDE6E00E7B9C3 /* LoginViewController.swift in Sources */,
+				04B91EB0261BB06500EDD36A /* ImageModel.swift in Sources */,
 				04DDF6AB260FD8DB008F965F /* ViewController.swift in Sources */,
 				04DDF6A7260FD8DB008F965F /* AppDelegate.swift in Sources */,
+				042B9239261F9E9C00E09BFD /* ImageViewController.swift in Sources */,
+				0470EA7826224FBD00615CC1 /* UIColor-Extension.swift in Sources */,
 				04DDF6A9260FD8DB008F965F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
