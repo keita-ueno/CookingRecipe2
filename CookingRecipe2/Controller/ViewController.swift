@@ -34,7 +34,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func jsonAnaly()  {
    
-        let url = "https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?format=json&applicationId=01732bf5386f246f14fe5f90b4df80e7"
+        let url = "https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?format=json&applicationId=1014272479943576132"
     
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
             
@@ -43,11 +43,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             case .success:
                 let json:JSON = JSON(response.data as Any)
                 
-                for i in 0...(response.data?.count)! - 1{
+                for i in 0...json.count{
                         let foodImageUrl = json["result"][i]["foodImageUrl"].string
                         
                         let recipeTitle = json["result"][i]["recipeTitle"].string
-                    
+                        
+            
                         var contentModel = Contents(foodImageUrl:foodImageUrl , recipeTitle:recipeTitle)
                     
                         self.contentArray.append(contentModel)
@@ -81,9 +82,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let imageView1 = cell.contentView.viewWithTag(1) as! UIImageView
         imageView1.sd_setImage(with: URL(string: contentArray[indexPath.row].foodImageUrl!), completed: nil)
-        
-//        let imageView2 = cell.contentView.viewWithTag(2) as! UIImageView
-//        imageView2.sd_setImage(with: URL(string: contentArray[indexPath.row].foodImageUrl!), completed: nil)
+        let recipeTitle = cell.contentView.viewWithTag(2) as! UILabel
+        recipeTitle.text = (contentArray[indexPath.row].recipeTitle! as! String)
 //
 //        let imageView3 = cell.contentView.viewWithTag(3) as! UIImageView
 //        imageView3.sd_setImage(with: URL(string: contentArray[indexPath.row].foodImageUrl!), completed: nil)
