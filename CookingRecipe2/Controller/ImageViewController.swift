@@ -8,6 +8,8 @@
 import UIKit
 
 class ImageViewController: UIViewController {
+    
+    var imageNumber = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()

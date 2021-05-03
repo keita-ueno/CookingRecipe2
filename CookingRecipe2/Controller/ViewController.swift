@@ -99,6 +99,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return view.frame.size.height/2
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //画面遷移
+        let imageLineVC = self.storyboard?.instantiateViewController(identifier: "imageLineVC") as! ImageViewController
+        
+        imageLineVC.imageNumber = indexPath.row
+        
+        self.navigationController?.pushViewController(imageLineVC, animated: true)
+        
+    }
     
 
 }
