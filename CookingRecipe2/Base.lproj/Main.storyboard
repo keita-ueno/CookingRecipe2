@@ -220,7 +220,7 @@
         <!--Image View Controller-->
         <scene sceneID="arS-NK-jhU">
             <objects>
-                <viewController id="VWl-dU-yMg" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageLineVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VWl-dU-yMg" customClass="ImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yaB-XD-T1y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

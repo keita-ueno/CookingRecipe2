@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contents {
+struct Contents:Codable {
     var foodImageUrl:String?
     var recipeTitle:String?
 }
