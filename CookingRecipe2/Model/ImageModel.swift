@@ -10,4 +10,6 @@ import Foundation
 struct Contents:Codable {
     var foodImageUrl:String?
     var recipeTitle:String?
+    var recipeUrl:String?
+    
 }

@@ -47,9 +47,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                         let foodImageUrl = json["result"][i]["foodImageUrl"].string
                         
                         let recipeTitle = json["result"][i]["recipeTitle"].string
+                    
+                        let recipeUrl = json["result"][i]["recipeUrl"].string
                         
             
-                        var contentModel = Contents(foodImageUrl:foodImageUrl , recipeTitle:recipeTitle)
+                        var contentModel = Contents(foodImageUrl:foodImageUrl , recipeTitle:recipeTitle,recipeUrl:recipeUrl)
                     
                         self.contentArray.append(contentModel)
                 }
@@ -104,7 +106,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //画面遷移
         let imageLineVC = self.storyboard?.instantiateViewController(identifier: "imageLineVC") as! ImageViewController
         
+        
         imageLineVC.imageNumber = indexPath.row
+        imageLineVC.contents = contentArray[indexPath.row]
         
         self.navigationController?.pushViewController(imageLineVC, animated: true)
         
