@@ -31,7 +31,7 @@ class SendDBModel {
         
         HUD.show(.progress)
         
-        let imageRef = Storage.storage().reference().child("foodImage").child("\(UUID().uuidString + String(Date().timeIntervalSince1970)).jpg")
+        let imageRef = Storage.storage().reference().child("recipedata").child("\(UUID().uuidString + String(Date().timeIntervalSince1970)).jpg")
         
         imageRef.putData(imageData, metadata: nil) { (matadata, error) in
             
