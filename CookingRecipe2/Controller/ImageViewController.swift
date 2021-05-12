@@ -69,6 +69,10 @@ class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let recipemodel:Contents? = userDefaultsEX.codable(forKey: "image")
         
         
+        
+        var sendDBModel = SendDBModel()
+        sendDBModel.sendimageView1Data(imageData: contents?.foodImageUrl , recipeTitle: contents?.recipeUrl)
+        
     }
     
     /*
