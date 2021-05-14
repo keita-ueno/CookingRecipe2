@@ -63,7 +63,7 @@ class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     @IBAction func send(_ sender: Any) {
         
-        HUD.show(.progress)
+        HUD.flash(.success, delay: 2.0)
         HUD.dimsBackground = true
         
         let recipemodel:Contents? = userDefaultsEX.codable(forKey: "image")
@@ -71,7 +71,9 @@ class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         
         var sendDBModel = SendDBModel()
-        sendDBModel.sendimageView1Data(imageData: contents?.foodImageUrl , recipeTitle: contents?.recipeUrl)
+        sendDBModel.sendimageView1Data(imageString: (contents?.foodImageUrl)! , recipeTitle: (contents?.recipeUrl)!)
+        
+        HUD.flash(.success)
         
     }
     
