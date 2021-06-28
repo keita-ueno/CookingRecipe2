@@ -9,11 +9,12 @@ import UIKit
 import SDWebImage
 import PKHUD
 
+
 class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     var imageNumber = Int()
     var contents:Contents?
-    var userDefaultsEX = UserDefaultsEX()
+    
     
     
     @IBOutlet weak var imageTableView: UITableView!
@@ -23,8 +24,15 @@ class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         imageTableView.delegate = self
         imageTableView.dataSource = self
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,22 +69,7 @@ class ImageViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     
-    @IBAction func send(_ sender: Any) {
-        
-        HUD.flash(.success, delay: 2.0)
-        HUD.dimsBackground = true
-        
-        let recipemodel:Contents? = userDefaultsEX.codable(forKey: "image")
-        
-        
-        
-        var sendDBModel = SendDBModel()
-        sendDBModel.sendimageView1Data(imageString: (contents?.foodImageUrl)! , recipeTitle: (contents?.recipeUrl)!)
-        
-        HUD.flash(.success)
-        
-    }
-    
+   
     /*
     // MARK: - Navigation
 
