@@ -11,8 +11,6 @@
 		0470EA7826224FBD00615CC1 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470EA7726224FBD00615CC1 /* UIColor-Extension.swift */; };
 		04969A30260FDE6E00E7B9C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04969A2F260FDE6E00E7B9C3 /* LoginViewController.swift */; };
 		04969A33260FE02E00E7B9C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04969A32260FE02E00E7B9C3 /* GoogleService-Info.plist */; };
-		049CB36F2633F1F400C8E61D /* UserDefaultsEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CB36E2633F1F400C8E61D /* UserDefaultsEX.swift */; };
-		049E893326320F870099DF3F /* SendDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E893226320F870099DF3F /* SendDBModel.swift */; };
 		04B91EB0261BB06500EDD36A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91EAF261BB06500EDD36A /* ImageModel.swift */; };
 		04DDF6A7260FD8DB008F965F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF6A6260FD8DB008F965F /* AppDelegate.swift */; };
 		04DDF6A9260FD8DB008F965F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF6A8260FD8DB008F965F /* SceneDelegate.swift */; };
@@ -28,8 +26,6 @@
 		0470EA7726224FBD00615CC1 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		04969A2F260FDE6E00E7B9C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04969A32260FE02E00E7B9C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		049CB36E2633F1F400C8E61D /* UserDefaultsEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEX.swift; sourceTree = "<group>"; };
-		049E893226320F870099DF3F /* SendDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDBModel.swift; sourceTree = "<group>"; };
 		04B91EAF261BB06500EDD36A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		04DDF6A3260FD8DB008F965F /* CookingRecipe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingRecipe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DDF6A6260FD8DB008F965F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				04B91EAF261BB06500EDD36A /* ImageModel.swift */,
-				049E893226320F870099DF3F /* SendDBModel.swift */,
-				049CB36E2633F1F400C8E61D /* UserDefaultsEX.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,8 +242,6 @@
 				04DDF6AB260FD8DB008F965F /* ViewController.swift in Sources */,
 				04DDF6A7260FD8DB008F965F /* AppDelegate.swift in Sources */,
 				042B9239261F9E9C00E09BFD /* ImageViewController.swift in Sources */,
-				049CB36F2633F1F400C8E61D /* UserDefaultsEX.swift in Sources */,
-				049E893326320F870099DF3F /* SendDBModel.swift in Sources */,
 				0470EA7826224FBD00615CC1 /* UIColor-Extension.swift in Sources */,
 				04DDF6A9260FD8DB008F965F /* SceneDelegate.swift in Sources */,
 			);
